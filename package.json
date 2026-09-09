@@ -18,8 +18,11 @@
     "build:linux": "npm run build && electron-builder --linux"
   },
   "dependencies": {
+    "@codemirror/lang-markdown": "^6.5.2",
+    "@codemirror/language-data": "^6.5.2",
     "@electron-toolkit/preload": "^3.0.2",
-    "@electron-toolkit/utils": "^4.0.0"
+    "@electron-toolkit/utils": "^4.0.0",
+    "@uiw/react-codemirror": "^4.25.11"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^2.1.0",

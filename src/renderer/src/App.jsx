@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Editor from './components/Editor'
 
 const notes = [
   {
@@ -169,12 +170,7 @@ Start writing here...
 
         <div className="editor-wrapper">
           <div className="editor">
-            <textarea
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              spellCheck="false"
-              autoFocus
-            />
+            <Editor value={content} onChange={setContent} />
           </div>
         </div>
 

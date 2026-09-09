@@ -408,61 +408,45 @@ button {
 .editor {
   width: 100%;
   max-width: 900px;
-
   margin: 0 auto;
   padding: 55px 70px;
 }
 
-.editor textarea {
-  width: 100%;
-  min-height: calc(100vh - 160px);
-
-  resize: none;
-
-  border: 0;
-  outline: none;
-
+.editor .cm-editor {
   background: transparent;
   color: #d4d4d4;
+  font-size: 14px;
+  line-height: 1.8;
+}
 
+.editor .cm-scroller {
   font-family:
     "SFMono-Regular",
     Consolas,
     "Liberation Mono",
     monospace;
 
-  font-size: 14px;
-  line-height: 1.8;
-
-  caret-color: #aaa;
+  overflow: auto;
 }
 
-.editor textarea::selection {
-  background: #3a3a3a;
+.editor .cm-content {
+  min-height: calc(100vh - 160px);
+  padding: 0;
 }
 
-/* Footer */
-
-.editor-footer {
-  height: 30px;
-  min-height: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 18px;
-
-  border-top: 1px solid #222;
-
-  color: #444;
-
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+.editor .cm-gutters {
+  background: transparent;
+  border: none;
 }
 
-.editor-status {
-  display: flex;
-  gap: 7px;
+.editor .cm-activeLine {
+  background: transparent;
+}
+
+.editor .cm-selectionBackground {
+  background: #333 !important;
+}
+
+.editor .cm-focused {
+  outline: none;
 }
